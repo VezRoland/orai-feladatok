@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(100, 149, 237);
+    font-family: "Open Sans", sans-serif;
+    background: rgb(100, 149, 237, 0.1);
+}
+
+button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background: rgb(100, 149, 237);
+    cursor: pointer;
+}
+
+.content {
+    width: min(450px, 90vw);
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.title {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.title::before {
+    content: attr(data-result);
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: transform 0.5s, opacity 0.25s;
+}
+
+.title[data-result="Helyes"]::before {
+    color: green;
+}
+
+.title[data-result^="Helytelen"]::before {
+    color: red;
+}
+
+.modal-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: rgb(0, 0, 0, 0.25);
+}
+
+.modal-box {
+    width: min(450px, 90vw);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
