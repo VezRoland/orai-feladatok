@@ -5,6 +5,7 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
+    background: whitesmoke;
     user-select: none;
 }
 
@@ -20,7 +21,7 @@ button {
 }
 
 button:active {
-    background: whitesmoke;
+    background: rgb(168, 199, 255);
 }
 
 button:disabled {
@@ -28,14 +29,15 @@ button:disabled {
 }
 
 .content {
-    width: min(350px, 90vw);
+    width: min(250px, 90vw);
     height: 45px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     padding-inline: 10px;
-    border: 1px solid lightgray;
     border-radius: 5px;
+    box-shadow: 0 5px 20px 5px rgb(0, 0, 0, 0.1);
+    background: rgb(179, 206, 255);
 }
 
 .content::before {
