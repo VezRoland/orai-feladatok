@@ -1,4 +1,6 @@
 function szamit() {
+    event.preventDefault()
+    
     const szel =+ document.querySelector("#szel").value
     const mag =+ document.querySelector("#mag").value
 
