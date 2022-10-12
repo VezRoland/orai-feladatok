@@ -4,13 +4,6 @@ body {
     place-items: center;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
 img {
     border-radius: 5px;
 }
@@ -20,4 +13,16 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.content {
+    width: min(400px, 90vw);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.material-icons {
+    font-size: min(1.5rem, 5vw);
 }
