@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>3. feladat</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5 mb-4 text-center">Egyszerű számológép</h2>
+        <div class="row">
+            <div class="col-md-5 col-12 m-auto">
+                <form onsubmit="return false" class="d-flex flex-column">
+                    <div class="display py-2 px-2 border border-secondary rounded bg-light">
+                        <p class="result m-0">0</p>
+                    </div>
+                    <input type="text" placeholder="Egyik szám" id="inp1" class="py-1 px-2 my-2 border border-secondary rounded">
+                    <input type="text" placeholder="Másik szám" id="inp2" class="py-1 px-2 mb-3 border border-secondary rounded">
+
+                    <div class="btns">
+                        <button onclick="calculate(this)" class="btn btn-primary">+</button>
+                        <button onclick="calculate(this)" class="btn btn-primary">-</button>
+                        <button onclick="calculate(this)" class="btn btn-primary">/</button>
+                        <button onclick="calculate(this)" class="btn btn-primary">*</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
