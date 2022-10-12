@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+img {
+    border-radius: 5px;
+}
+
+button {
+    padding-block: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
