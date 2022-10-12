@@ -6,12 +6,16 @@ body {
 
 img {
     border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.15);
 }
 
 button {
+    display: grid;
+    align-items: center;
     padding-block: 5px;
     border: none;
     border-radius: 5px;
+    background: lightgray;
     cursor: pointer;
 }
 
